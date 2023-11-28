@@ -1,0 +1,46 @@
+
+line con 0
+password cafe_123@
+login
+exit
+
+enable secret cafe_123@
+
+service password-encryption
+
+banner motd cEIGRP Team - Personal Access Onlyc
+
+network 192.168.0.4 0.0.0.3
+no auto-summary
+
+network 192.168.0.12 0.0.0.3
+no auto-summary
+
+network 192.168.0.80 0.0.0.15
+no auto-summary
+
+network 192.168.0.96 0.0.0.15
+no auto-summary
+
+network 192.168.0.112 0.0.0.15
+no auto-summary
+
+network 192.168.0.128 0.0.0.15
+no auto-summary
+
+network 192.168.0.144 0.0.0.15
+no auto-summary
+
+passive-interface fa0/0
+
+ip dhcp pool vlan10
+network 192.168.0.80 255.255.255.240
+
+ip dhcp pool vlan20
+network 192.168.0.96 255.255.255.240
+
+ip dhcp pool vlan30
+network 192.168.0.112 255.255.255.240
+
+ip dhcp pool vlan40
+network 192.168.0.128 255.255.255.240

@@ -1,0 +1,38 @@
+SWITCH_1
+
+### Initial Config ###
+line con 0
+password cafe_123@
+login
+exit
+
+enable secret cafe_123@
+
+service password-encryption
+
+banner motd cEIGRP Team - Personal Access Onlyc
+
+vlan 10
+name Architecture
+vlan 20
+name Cibersecurity
+vlan 30
+name WebDeveloping
+vlan 40
+name Automation
+
+vlan 99
+name Administration
+
+int range fa0/1-3
+switchport mode trunk
+switchport trunk allowed vlan 10,20,30,40,99
+vtp mode server
+vtp domain eigrpvtp.com
+vtp password cafe_123@
+
+
+
+
+
+

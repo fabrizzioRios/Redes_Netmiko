@@ -1,0 +1,34 @@
+line con 0
+password cafe_123@
+login
+exit
+
+vtp mode server
+vtp domain eigrpvtp.com
+vtp password cafe_123@
+
+int range fa0/1
+switchport mode trunk
+
+switchport trunk allowed vlan 10,20,30,40,99
+no sh
+
+int range fa0/2-3
+sh
+channel-group 1 mode desirable
+switchport trunk allowed vlan 10,20,30,40,99
+no sh
+
+int po1
+switchport mode trunk
+
+int fa0/4
+switchport mode access
+switchport access vlan 20
+
+int fa0/5
+switchport mode access
+switchport access vlan 10
+
+int fa0/6
+switchport access vlan 99

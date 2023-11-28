@@ -1,0 +1,16 @@
+line con 0
+password cafe_123@
+login
+exit
+
+enable secret cafe_123@
+
+service password-encryption
+
+banner motd cEIGRP Team - Personal Access Onlyc
+
+network 192.168.0.8 0.0.0.3
+no auto-summary
+
+network 192.168.0.12 0.0.0.3
+no auto-summary
