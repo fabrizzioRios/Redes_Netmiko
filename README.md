@@ -32,7 +32,7 @@ Clonar el repositorio:
 
 Con esto ya tendrias el repositorio descargado directamente a tu computadora.
 
-## Descarga de librerias (OPCIONAL) 🗂️
+## Descarga de librerias 🗂️
 
 Despues de haber clonado el repositorio, necesitaremos descargar las librerias necesarias para el funcionamiento del proyecto.
 Con el archivo requirements.txt podemos instalar de manera rapida las librerias y dependencias utilizadas.
