@@ -1,4 +1,4 @@
-# Proyecto-Final-IoT 💻
+# Proyecto-Redes III 💻
 
 En este proyecto final, se busca la implementacion de todos los temas del curso de Redes III, mediante procesos de automatizacion con Netmiko y Python.
 
