@@ -1,7 +1,7 @@
+
 import time
 
 from netmiko import ConnectHandler
-import json
 
 ORDERED_ALL_DEVICES = [
     {'device': 'ROUTER_RD',

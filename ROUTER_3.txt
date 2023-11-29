@@ -9,6 +9,7 @@ service password-encryption
 
 banner motd cEIGRP Team - Personal Access Onlyc
 
+router eigrp 1
 network 192.168.0.8 0.0.0.3
 no auto-summary
 
